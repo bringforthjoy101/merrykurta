@@ -1,0 +1,11 @@
+node_modules
+/nbproject/private/
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+/nbproject
+
+
+
