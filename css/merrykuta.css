@@ -1,0 +1,324 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    background: url("https://res.cloudinary.com/dzflnjyii/image/upload/v1592646974/MerryKuta/Rectangle_36_zr3nmc.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+
+}
+.container{
+    position: relative;
+    height: 97vh;
+    margin: 0;
+}
+.logo {
+    background-image: url("https://res.cloudinary.com/dzflnjyii/image/upload/v1593184991/MerryKuta/merry_kurta_logo-1_1_2_nlzu0p.png");
+    position: relative;
+    width: 202px;
+    height: 193px;
+    display: block;
+    
+
+}
+    
+
+
+
+.chairpics{
+    position: absolute;
+    right: 90px;
+    bottom: 0px;
+}
+
+
+.blobs{
+    height:181px;
+    width:136px;
+
+}
+
+.chairs{
+    width: 324px;
+height: 254px;
+}
+
+
+.blobpics{
+    position: absolute;
+    right: 160px;
+    top: 100px;
+}
+
+
+#mainpage {
+width: 30%;
+margin: auto;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.formm{
+    display: block;
+    text-align: center;
+}
+
+.writeup{
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #23B00C;
+padding-top: 40px;
+}
+
+input[type=password]{
+    width:70%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+padding: 10px;
+margin: 5px;
+}
+
+.emaillogin{
+    width:70%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.emailforgotpassword{
+        width:70%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.emailsignpage{
+    width:70%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+textarea:hover{
+    border-color: solid #126e04;
+}
+
+
+input[type=text]{
+    width:70%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+padding: 10px;
+margin: 5px;
+}
+
+
+.resetpassword{
+    background: #23B00C;
+    box-shadow: #a1a7a0 ;
+    width:70%;
+border-radius: 5px;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 60px;
+}
+
+.forgotpassword{
+    background: #23B00C;
+    box-shadow: #a1a7a0 ;
+    width:70%;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 60px;
+}
+
+.loginpage{
+    background: #23B00C;
+    box-shadow: #a1a7a0 ;
+    width:70%;
+border-radius: 5px;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.signpage{
+    background: #23B00C;
+    box-shadow: #a1a7a0 ;
+    width:70%;
+border-radius: 5px;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.resetpassword:hover, .forgotpassword:hover, .loginpage:hover,  .signpage:hover{
+background-color:#47993a;
+}
+
+
+.linklogin, .linksignpage{
+    color: #23B00C;
+}
+
+
+.textsignpage1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 60%;
+text-align: center;
+
+}
+
+.textsignpage2{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 100%;
+text-align: center;
+padding-bottom: 25px;
+}
+
+.textlogin1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100%;
+    text-align: center;
+}
+
+.textlogin2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.textforgotpassword{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 1000;
+font-size: 80%;
+text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body, html {
+        height: 100%;
+    margin: 0;
+    background: none;
+     }
+     .logo {
+        background-image: url("https://res.cloudinary.com/dzflnjyii/image/upload/v1595282251/MerryKuta/newsmallogomerrykuta_grwf6d.png"); 
+        background-repeat: no-repeat;
+        background-size: 55%;
+        margin-left: 15%;
+    margin-top:15%;
+    width: 102px;
+    height: 93px;
+     }
+
+     #mainpage {
+        width: 70%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+    .blobpics{
+        display: none;
+
+    }
+    .chairpics{
+        display: none;
+    }
+        
+    }
+
+    @media screen and (min-width:600px) and (max-width: 1140px){
+        .blobpics{
+            display: none;
+    
+        }
+        .chairpics{
+            display: none;
+        }
+        #mainpage {
+            width: 45%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            }
+    } 
+    @media screen and (min-width:600px) and (max-width: 910px){
+        body, html {
+            height: 100%;
+        margin: 0;
+        background: none;
+         }
+         .logo {
+            background-image: url("https://res.cloudinary.com/dzflnjyii/image/upload/v1595282251/MerryKuta/newsmallogomerrykuta_grwf6d.png"); 
+            background-repeat: no-repeat;
+            background-size: 55%;
+            margin-left: 15%;
+        margin-top:10%;
+        width: 102px;
+        height: 93px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {
+    .example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+ /* @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+ /* @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+ /* @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /*@media screen and (min-width: 1200px) {
+  html, body {
+    min-width: height 5%;
+  }
