@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  margin: 0;
+}
+
+.ml0 {
+  padding-left: 0px;
+}
+
+body#messages {
+  height: 100vh;
+  background: #E5E5E5;
+  font-family: Poppins;
+}
+
+.ms-box {
+  margin-top: 85px;
+}
+
+.ms-box .mscc {
+  min-height: 500px;
+  overflow: auto;
+  height: 500px;
+}
+
+.ms-box .mscc::-webkit-scrollbar {
+  width: 1em;
+}
+
+.ms-box .mscc::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #23B00C;
+          box-shadow: inset 0 0 6px #23B00C;
+}
+
+.ms-box .mscc::-webkit-scrollbar-thumb {
+  background-color: #23B00C;
+  outline: 1px solid #23B00C;
+}
+
+.ms-box .msc {
+  width: 100%;
+}
+
+.ms-box .msp {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.ms-box .msp .msu {
+  width: 100%;
+  text-align: center;
+}
+
+.ms-box .ms {
+  padding: 5px 10px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ms-box .ms small {
+  margin: 0 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.ms-box .ms p {
+  width: 50%;
+  padding: 15px 10px;
+  word-break: break-all;
+}
+
+.ms-box .msr {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ms-box .msr small {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.ms-box .msr p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: #A9DFA1;
+  border-radius: 5px;
+}
+
+.ms-box .msl p {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.ms-box .msb {
+  height: 100px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.ms-box .msb input[type=text] {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  height: 40px;
+  width: 500px;
+  outline: none;
+  padding-left: 20px;
+  color: #777;
+}
+
+.ms-box .msb input[type=file] {
+  display: none;
+}
+
+.ms-box .msb label {
+  display: inline-block;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.ms-box .msb label img {
+  height: 20px;
+  width: 20px;
+}
+
+.ms-box .msb button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  background: #23B00C;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.ms-box .msb button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .ml0 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .ms-box .ms small {
+    font-size: 10px;
+  }
+  .ms-box .ms p {
+    width: 80%;
+  }
+}
+
+footer {
+  background: #161723;
+  color: #fff;
+  height: 160px;
+}
+
+footer a {
+  margin: 0px 15px;
+  text-decoration: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=sh1.css.map */

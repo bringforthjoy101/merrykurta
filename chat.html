@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/nav_style.css">
+    <link rel="stylesheet" href="./css/sh1.css">
+
+    <title>messages</title>
+</head>
+
+<body id="messages">
+    <nav class="nav--1">
+        <div class="nav--logo">
+            <img src="./img/logo.png" alt="site logo">
+            <a href="#" class="logo--link">Kurta</a>
+        </div>
+        <div class="nav--links">
+            <ul>
+                <li><a href="#" class="nav--link">home</a></li>
+                <li><a href="#" class="nav--link">work</a></li>
+                <li><a href="#" class="nav--link">about us</a></li>
+                <li><a href="#" class="nav--link">contact us</a></li>
+                <li><a href="#" class="nav--link">Login</a></li>
+                <li><a href="#" class="nav--link">Register</a></li>
+            </ul>
+        </div>
+        <div class="nav--btn">
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div>
+    </nav>
+    <!-- ===================messages container==================== -->
+    <section class="ms-box">
+        <div class="row">
+            <div class="col-md-3 ml0">
+                <div class="msp">
+                    <div class="msu">
+                        <p>Okon Bassey</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 mscc">
+                <div class="msc">
+                    <div class="mt msl ms">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, esse!</p>
+                        <small>10:00 AM</small>
+                    </div>
+                    <div class="mr msr ms">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, esse!</p>
+                        <small>10:00 AM</small>
+                    </div>
+                    <div class="mt msl ms">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, esse!</p>
+                        <small>10:00 AM</small>
+                    </div>
+                    <div class="mr msr ms">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, esse!</p>
+                        <small>10:00 AM</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row msb">
+            <div class="col-md-8 offset-md-3 msb">
+                <input type="text" name="" id="msg_text" placeholder="Type Your Message Well" required>
+                <input type="file" name="" id="media__file"><label for="media__file"><img src="./img/upload.png" alt=""></label>
+                <button class="send__btn" id="send_msg">send</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ===========================footer==================== -->
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-6">
+                    © Merrykurta 2020
+                </div>
+                <div class="col-md-6">
+                    <a href="#"> <img src="./img/fb.png" alt=""> </a>
+                    <a href="#"> <img src="./img/twitter.png" alt=""> </a>
+                    <a href="#"> <img src="./img/insta.png" alt=""> </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#send_msg').click(function() {
+                msg()
+            });
+            $(document).keypress(function(event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == '13') {
+                    msg()
+                }
+            });
+            $('#msg_text').keydown(function() {
+                $(this).css({
+                    'border': ' 1px solid #C4C4C4',
+                    'color': '#777'
+
+                })
+                $(this).attr('placeholder', 'Type Your Message Well')
+
+            })
+
+            function msg() {
+                var msg = $('#msg_text').val()
+                if (msg == '') {
+                    $('#msg_text').css({
+                        'border': ' 1px solid red',
+                        'color': 'red'
+                    })
+                    $('#msg_text').attr('placeholder', 'please enter a message first')
+                } else {
+                    $('#msg_text').css({
+                        'border': ' 1px solid #C4C4C4',
+                        'color': '#777'
+
+                    })
+                    var currentdate = new Date();
+                    var datetime = `${ currentdate.getHours()}:${currentdate.getMinutes()} `
+
+                    var content = `
+                            <div class="mr msr ms">
+                                    <p>${msg}</p>
+                                    <small>${datetime}</small>
+                                </div>
+                `
+                    $('.msc').append(content);
+                    $('#msg_text').val('')
+                    $('#msg_text').focus()
+                }
+                $(".mscc").animate({
+                    scrollTop: 20000000
+                }, "slow");
+            }
+        });
+    </script>
+</body>
+
+</html>
