@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: poppins;
+  background-color: #f8fbf9;
+}
+
+main {
+  min-height: 80vh;
+  margin: 40px 0;
+}
+
+.form__container {
+  min-height: 650px;
+}
+
+.form__container .dflex .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form__container .dflex .form header h3 {
+  color: #23b00c;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form__container .dflex .form .form__content {
+  margin-top: 50px;
+}
+
+.form__container .dflex .form .form__content .form_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.form__container .dflex .form .form__content .from__input {
+  width: 100%;
+  display: block;
+  background-color: #f8fbf9;
+  height: 50px;
+  border: none;
+  border: 1px solid #eee;
+  border-radius: 15px 15px 0px 0px;
+  outline: none;
+  padding-left: 20px;
+  color: #777;
+}
+
+.form__container .dflex .form .form__content textarea {
+  min-height: 160px;
+  resize: none;
+  padding-top: 20px;
+}
+
+.form__container .dflex .form .form__content .form__btn {
+  background-color: #23b00c;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  width: 140px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.form__container .dflex .img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+}
+
+.form__container .dflex .img img {
+  width: 60%;
+}
+
+@media (max-width: 1280px) {
+  .form__container .dflex .form header h3 {
+    font-size: 20px;
+  }
+  .form__container .dflex .form header p {
+    font-size: 14px;
+  }
+  .form__container .dflex .form .form__content .form_input_container {
+    width: 100%;
+  }
+  .form__container .dflex .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form__container .dflex .img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .form__container .dflex .form .form__content .form_input_container {
+    width: 100%;
+  }
+  .form__container .dflex .img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .form__container .dflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__container .dflex .form {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .form__container .dflex .form .form__content .form_input_container {
+    width: 100%;
+  }
+  .form__container .dflex .img {
+    height: 100%;
+  }
+  .form__container .dflex .img img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

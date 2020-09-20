@@ -1,0 +1,284 @@
+.Nav {
+  background-color: #fff;
+  height: 85px;
+  color: #000;
+}
+
+.Nav .k_container {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav .k_container .nav_logo {
+  color: #000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Nav .k_container .nav_logo .logo {
+  width: 60px;
+  height: 60px;
+}
+
+.Nav .k_container .nav_links {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Nav .k_container .nav_links .ul_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.Nav .k_container .nav_links .ul_links li {
+  margin: 0 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.Nav .k_container .nav_links .ul_links li a {
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  text-transform: capitalize;
+}
+
+.Nav .k_container .nav_links .ul_links li a:hover {
+  background-color: #23b00c;
+  color: #ffffff;
+}
+
+.Nav .k_container .nav_links .ul_links li a:last-of-type():hover {
+  background-color: #ffffff;
+}
+
+.Nav .k_container .nav_links .ul_links li a img {
+  width: 25px;
+  height: 25px;
+}
+
+.Nav .k_container .menu {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+
+.Nav .k_container .menu span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(0px) rotate(0deg);
+          transform: translateY(0px) rotate(0deg);
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .active_Nav {
+    height: 340px !important;
+  }
+  .active_ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .line2 {
+    -webkit-animation: line2 0.5s forwards;
+            animation: line2 0.5s forwards;
+  }
+  .line1 {
+    -webkit-animation: line1 0.5s forwards;
+            animation: line1 0.5s forwards;
+  }
+  .line3 {
+    -webkit-animation: line3 0.5s forwards;
+            animation: line3 0.5s forwards;
+  }
+  .Nav {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 60px;
+    transition: 0.5s;
+  }
+  .Nav .k_container {
+    max-width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .Nav .k_container .nav_logo {
+    margin-top: 5px;
+  }
+  .Nav .k_container #line {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  .Nav .k_container #line::after, .Nav .k_container #line::before {
+    position: absolute;
+    content: "";
+    width: 250%;
+    background-color: #ccc;
+    height: 2px;
+    border-radius: 5px;
+    left: 0px;
+    bottom: -10px;
+  }
+  .Nav .k_container #line::before {
+    width: 20px;
+    z-index: 10;
+    background-color: #2c3e50;
+    -webkit-animation: dash 2s forwards;
+            animation: dash 2s forwards;
+  }
+  .Nav .k_container .nav_links .ul_links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    width: 100%;
+    display: none;
+  }
+  .Nav .k_container .nav_links .ul_links li {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .Nav .k_container .nav_links .ul_links li a {
+    width: 100%;
+  }
+  .Nav .k_container .nav_links .ul_links li:hover {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  .Nav .k_container .menu {
+    top: 15px;
+    display: block;
+  }
+}
+
+@-webkit-keyframes line2 {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@keyframes line2 {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@-webkit-keyframes line1 {
+  from {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+  }
+}
+
+@keyframes line1 {
+  from {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes line3 {
+  from {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+@keyframes line3 {
+  from {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 250%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes dash {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 250%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */
