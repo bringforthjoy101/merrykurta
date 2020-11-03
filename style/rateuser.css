@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  background-color: #e5e5e5;
+}
+
+main {
+  min-height: 80vh;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.btn_link {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #23b00c;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.udata {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.udata .dflex {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.udata .dflex .col_data {
+  margin: 0px 30px;
+}
+
+.udata .dflex .col_data .rate_data .rate_stars {
+  margin: 0px 5px;
+}
+
+.udata .verfied span {
+  color: #23b00c;
+}
+
+.udata .user_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.udata .user_img a:first-of-type {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #23b00c;
+}
+
+.rate_data .rate_container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.rate_data .rate_container .rate_header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rate_data .rate_container .rate_btn {
+  text-align: right;
+}
+
+.rate_data .rate_container .rate_btn button {
+  border: none;
+  text-transform: capitalize;
+}
+
+.rate_data .rate_container textarea {
+  margin: 10px 0;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  padding: 20px;
+  outline: none;
+  background-color: #fbfbfb;
+  resize: none;
+}
+
+.rate_data .rate_container textarea::-webkit-input-placeholder {
+  color: #777;
+}
+
+.rate_data .rate_container textarea:-ms-input-placeholder {
+  color: #777;
+}
+
+.rate_data .rate_container textarea::-ms-input-placeholder {
+  color: #777;
+}
+
+.rate_data .rate_container textarea::placeholder {
+  color: #777;
+}
+
+@media (max-width: 772px) {
+  .udata .dflex .col_data .rate_data .dflex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 578px) {
+  .udata {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .udata .dflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .udata .dflex .rate_data .dflex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .rate_data .rate_container {
+    padding: 20px;
+  }
+  .rate_data .rate_container .rate_btn button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=rateuser.css.map */

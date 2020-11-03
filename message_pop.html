@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/k_container.css" />
+    <link rel="stylesheet" href="./style/Nav.css" />
+    <link rel="stylesheet" href="./style/message.css" />
+    <title>Kurata | Send Message</title>
+  </head>
+  <body>
+    <nav class="Nav" id="Nav">
+      <div class="k_container">
+        <div class="nav_logo">
+          <img src="./images/logo.png" alt="Merrykurta logo" class="logo" />
+        </div>
+        <div class="nav_links">
+          <ul class="ul_links" id="ul_links">
+            <span id="line"></span>
+            <li>
+              <a href="#">about us</a>
+            </li>
+            <li>
+              <a href="#">contact us</a>
+            </li>
+            <li>
+              <a href="#">Tickets</a>
+            </li>
+            <li>
+              <a href="#">Messages</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/notification.png" alt="notification bill"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu" id="btn">
+          <span id="line1"></span>
+          <span id="line2"></span>
+          <span id="line3"></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="popup">
+          <div class="k_container">
+              <div class="popup_container">
+                <div class="dflex">
+                    <div class="data_col">
+                        <div class="roles">
+                            <div class="user_data">
+                                <img src="./images/rateuser.png" alt="Okon Bassy image">
+                                <h3>Okon Bassey</h3>
+                            </div>
+                            <div class="roles_items">
+                                <ul>
+                                  <li> √  Product Specification  </li>
+                                  <li> √  Specific Instructions </li>
+                                  <li> √  Relevant Files </li>
+                                  <li> √  Your Budget </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data_col">
+                      <div class="msg_content">
+                          <header>
+                              <h4>Send Message</h4>
+                              <div class="msg">
+                                  <form action="">
+                                      <div class="form_field">
+                                      <textarea name="" id="inputMsg" cols="30" rows="10"></textarea>
+                                      </div>
+                                      <div class="form_field">
+                                          <div class="form_btns">
+                                              <div class="dflex">
+                                                  <div class="spans">
+                                                      <span class="word_counter">0</span>
+                                                      <span class="all_words">/2500</span>
+                                                  </div>
+                                              <div class="form_btn">
+                                                  <label for="formFile">
+                                                      <img src="./images/clip.svg" style="width: 20px; height: 20px;">
+                                                  </label>
+                                                  <input type="file" style="display: none;" id="formFile">
+                                              </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form_field">
+                                          <input type="submit" class="btn_link" value="submit">
+                                      </div>
+                                  </form>
+                              </div>
+                          </header>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="k_container">
+        <div class="dflex">
+          <p>© Merrykurta 2020</p>
+          <div class="social__links">
+            <img src="./images/fb.png" alt="facebook icon" />
+            <img src="./images/twitter.png" alt="twitter icon" />
+            <img src="./images/insta.svg" alt="instgrame icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script>
+        let elm = document.querySelector("#inputMsg")
+        const counterElm =  document.querySelector(".word_counter")
+        let counter = ()=>{
+            let count  = elm.value.length
+            if(count <= 2500)  counterElm.textContent = count
+        }
+        elm.addEventListener("keydown" , counter)
+        elm.addEventListener("change" , counter)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  background-color: #e5e5e5;
+}
+
+main {
+  min-height: 80vh;
+}
+section {
+  margin: 30px 0;
+}
+
+.btn_link {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #23b00c;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.udata {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  .dflex {
+    justify-content: flex-start;
+    .col_data {
+      margin: 0px 30px;
+
+      .rate_data {
+        .rate_stars {
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+  .verfied {
+    span {
+      color: #23b00c;
+    }
+  }
+  .user_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    a {
+      &:first-of-type {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #23b00c;
+      }
+    }
+  }
+}
+
+.rate_data {
+  .rate_container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    .rate_header {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .rate_btn {
+      text-align: right;
+      button {
+        border: none;
+        text-transform: capitalize;
+      }
+    }
+
+    textarea {
+      margin: 10px 0;
+      width: 100%;
+      display: inline-block;
+      border: none;
+      padding: 20px;
+      outline: none;
+      background-color: #fbfbfb;
+      resize: none;
+      &::placeholder {
+        color: #777;
+      }
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .udata {
+    .dflex {
+      .col_data {
+        .rate_data {
+          .dflex {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .udata {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    .dflex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .rate_data {
+        .dflex {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  .rate_data {
+    .rate_container {
+      padding: 20px;
+      .rate_btn {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

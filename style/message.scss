@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+}
+main {
+  min-height: 600px;
+  min-height: 100vh;
+}
+ul {
+  list-style: none;
+  li {
+    font-size: 14px;
+  }
+}
+
+.btn_link {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #23b00c;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.popup {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  .popup_container {
+    padding: 50px;
+    .dflex:first-child {
+      min-height: 500px;
+    }
+    .dflex {
+      background-color: #fff;
+      padding: 20px;
+
+      .data_col:nth-child(1) {
+        flex: 1;
+        align-self: center;
+      }
+      .data_col:nth-child(2) {
+        flex: 3;
+        text-align: left;
+      }
+
+      .data_col {
+        text-align: center;
+        padding: 10px;
+        h4 {
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        ul {
+          text-align: left;
+        }
+        textarea {
+          width: 100%;
+          resize: none;
+          border: none;
+          border-bottom: 0px;
+          outline: #777;
+          color: #777;
+          padding: 20px;
+          line-height: 2;
+        }
+        .form_field {
+          border: 1px solid #c4c4c4;
+        }
+        .form_btns {
+          .dflex {
+            padding: 0;
+            padding: 5px 20px;
+            color: #777;
+            min-height: auto;
+          }
+        }
+
+        label {
+          cursor: pointer;
+        }
+        .form_field:nth-child(1) {
+          border-bottom: 0px;
+          height: 300px;
+        }
+        .form_field:nth-child(2) {
+          height: 40px;
+          margin: 1px 0;
+        }
+        .form_field:nth-child(3) {
+          border: none;
+          text-align: right;
+          height: 30px;
+          margin-bottom: 20px;
+          input[type="submit"] {
+            border: none;
+            height: 45px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .popup {
+    .popup_container {
+      padding: 10px;
+      .dflex {
+        flex-direction: column;
+        .data_col {
+          .form_field:nth-child(3) {
+            input[type="submit"] {
+              width: 100%;
+            }
+          }
+          .form_field:nth-child(2) {
+            .dflex {
+              flex-direction: row;
+            }
+          }
+          .form_field:nth-child(3) {
+          }
+        }
+      }
+    }
+  }
+}
